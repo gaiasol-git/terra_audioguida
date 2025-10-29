@@ -1,13 +1,36 @@
-<main>
-  <div class="section">
-    <h3>Introduzione</h3>
-    <audio controls>
-      <source src="audio/intro_test.mp3" type="audio/mpeg">
-    </audio>
-  </div>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Introduzione - Terra</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Introduzione</h1>
+  </header>
 
- <link rel="stylesheet" href="assets/style.css">
+  <main>
+    <div class="section">
+      <!-- Immagine introduttiva -->
+      <img src="assets/intro.png" alt="Introduzione alla mostra" style="width:100%; border-radius:12px; margin-bottom:1rem;">
 
-  <nav><a href="index.html">&larr; Torna all'indice</a></nav>
-</main>
+      <!-- Testo introduttivo -->
+      <p>Benvenuti alla mostra <strong>“Terra. Il pianeta in 5 sensi”</strong>. In questa sezione ascolterete un breve audio di introduzione alla visita. Scoprirete come i sensi ci permettono di comprendere il pianeta Terra e le sue dinamiche.</p>
+
+      <!-- Player audio -->
+      <audio controls>
+        <source src="audio/introduzione_intro.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l’audio HTML5.
+      </audio>
+    </div>
+
+    <nav>
+      <a href="index.html">&larr; Torna all'indice</a>
+    </nav>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
 
