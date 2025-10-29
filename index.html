@@ -5,12 +5,28 @@
   <title>Terra. Il pianeta in 5 sensi</title>
   <link rel='stylesheet' href='assets/style.css'>
   <style>
-    /* Aumenta le dimensioni dei caratteri per l'indice */
+    /* Layout a due colonne */
+    main {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .indice {
+      flex: 1 1 300px;
+    }
+    .immagine-indice {
+      flex: 0 0 200px; /* larghezza fissa per l'immagine */
+    }
+    .immagine-indice img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
     main ul li a {
-      font-size: 1.2rem;  /* leggermente più grande */
+      font-size: 1.2rem;
     }
     main h2 {
-      font-size: 1.6rem;  /* titolo indice più evidente */
+      font-size: 1.6rem;
     }
   </style>
 </head>
@@ -20,23 +36,17 @@
   </header>
 
   <main>
-    <h2>Indice</h2>
-    <ul>
-      <li><a href='introduzione.html'>Introduzione</a></li>
-      <li><a href='olfatto.html'>Olfatto</a></li>
-      <li><a href='tatto.html'>Tatto</a></li>
-      <li><a href='vista.html'>Vista</a></li>
-      <li><a href='gusto.html'>Gusto</a></li>
-      <li><a href='udito.html'>Udito</a></li>
-      <li><a href='theremin.html'>Theremin</a></li>
-      <li><a href='totem_video.html'>Totem Video</a></li>
-      <li><a href='matra.html'>Matra</a></li>
-      <li><a href='monitoraggio.html'>Monitoraggio</a></li>
-      <li><a href='tavola_vibrante.html'>Tavola Vibrante</a></li>
-    </ul>
-  </main>
-
-  <script src='assets/script.js'></script>
-</body>
-</html>
-
+    <!-- Colonna dell'indice -->
+    <div class="indice">
+      <h2>Indice</h2>
+      <ul>
+        <li><a href='introduzione.html'>Introduzione</a></li>
+        <li><a href='olfatto.html'>Olfatto</a></li>
+        <li><a href='tatto.html'>Tatto</a></li>
+        <li><a href='vista.html'>Vista</a></li>
+        <li><a href='gusto.html'>Gusto</a></li>
+        <li><a href='udito.html'>Udito</a></li>
+        <li><a href='theremin.html'>Theremin</a></li>
+        <li><a href='totem_video.html'>Totem Video</a></li>
+        <li><a href='tavola_vibrante.html'>Tavola Vibrante</a></li>
+        <li><a href='monitoraggio.html'>Sala
